@@ -1,4 +1,4 @@
-?php 
+<?php 
 /* This file is dedicated to the public domain; you may do as you wish with it. */
 $v = @(string)$_GET['v'];
 $t = @(string)$_GET['t'];

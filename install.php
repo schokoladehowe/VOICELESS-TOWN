@@ -880,6 +880,7 @@ if ($step == 0) {
 
 	$instance_config = 
 '<'.'?php
+
 /*
 *  Instance Configuration
 *  ----------------------
@@ -887,6 +888,7 @@ if ($step == 0) {
 *
 *  You can copy values from config.php (defaults) and paste them here.
 */
+
 ';
 	
 	create_config_from_array($instance_config, $_POST);
@@ -971,3 +973,5 @@ if ($step == 0) {
 	}
 	
 	echo Element('page.html', $page);
+}
+

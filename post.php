@@ -1,6 +1,6 @@
 <?php
 /*
- *
+ *  Copyright (c) 2010-2014 Tinyboard Development Group
  */
 
 require_once 'inc/functions.php';
@@ -1098,6 +1098,7 @@ function handle_post(){
 					else {
 					$error = 1;
 					}
+
 				}
 				else {
 					$error = 1;
@@ -1106,6 +1107,7 @@ function handle_post(){
 				if ($error){
 					$path = sprintf($config['file_thumb'],isset($config['file_icons'][$file['extension']]) ? $config['file_icons'][$file['extension']] : $config['file_icons']['default']);	
 				}
+
 				$file['thumb'] = basename($file['thumb']);
 				$size = @getimagesize($path);
 				$file['thumbwidth'] = $size[0];

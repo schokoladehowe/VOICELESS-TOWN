@@ -31,7 +31,7 @@ function die_404() { global $config;
   if (!$config['page_404']) {
     header("HTTP/1.1 404 Not Found");
     header("Status: 404 Not Found");
-    echo "<h1>404 Not Found</h1><p>Page doesn't exist<hr><address>Toru-chan</address>";
+    echo "<h1>404 Not Found</h1><p>Page doesn't exist<hr><address>vichan</address>";
   }
   else {
     header("Location: ".$config['page_404']);
@@ -68,7 +68,7 @@ if ($reached) {
     header("Content-Type", "text/html; charset=utf-8");
   }
   header("Cache-Control: public, nocache, no-cache, max-age=0, must-revalidate");
-  header("Expires: Fri, 22 Feb 2020 06:00:00 GMT");
+  header("Expires: Fri, 22 Feb 1991 06:00:00 GMT");
   header("Last-Modified: ".date('r', filemtime($request)));
 
   //if (isset ($_SERVER['HTTP_ACCEPT_ENCODING']) && preg_match('/gzip/', $_SERVER['HTTP_ACCEPT_ENCODING']) && file_exists($request.".gz")) {

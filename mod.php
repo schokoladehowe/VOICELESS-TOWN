@@ -1,7 +1,7 @@
 <?php
 
 /*
- * 
+ *  Copyright (c) 2010-2014 Tinyboard Development Group
  */
 
 require_once 'inc/functions.php';
@@ -211,3 +211,4 @@ foreach ($pages as $uri => $handler) {
 }
 
 error($config['error']['404']);
+

@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Torukia Banners</title>
+<title>Lainchan Banners</title>
 </head>
 <body>
 <?php
